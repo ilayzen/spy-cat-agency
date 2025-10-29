@@ -1,0 +1,18 @@
+logging:
+  level: debug
+  formatter: TXT
+
+api:
+  server_port: ":3000"
+  request_rw_timeout: 15s
+  idle_timeout: 60s
+
+db:
+  port: "5432"
+  username: "dev"
+  host: "app-postgres"
+  dbName: "spy"
+  password: "12345"
+  sslmode: "disable"
+  maxIdleConnections: 10
+  maxOpenConnections: 200
